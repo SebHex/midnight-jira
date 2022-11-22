@@ -1,0 +1,375 @@
+/* ==UserStyle==
+@name           Midnight Jira 
+@description    A midnight theme for Jira
+@namespace      github.com/SebHex
+@homepageURL    https://github.com/SebHex/midnight-jira
+@updateURL      https://raw.githubusercontent.com/SebHex/midnight-jira/master/midnight-jira.user.css
+@author         Sebastian Hender
+@version        1.0.0
+==/UserStyle== */
+
+@-moz-document regexp(".*.atlassian.net/jira.*"),
+regexp(".*.atlassian.net/browse.*"),
+regexp(".*.atlassian.net/secure.*") {
+  :root {
+    --primary-0: 0 0% 0%;
+    --primary-5: 202 100% 6%;
+    --primary-10: 201 100% 9%;
+    --primary-15: 199 100% 12%;
+    --primary-20: 199 100% 15%;
+    --primary-25: 198 100% 18%;
+    --primary-30: 198 100% 21%;
+    --primary-35: 198 100% 25%;
+    --primary-40: 197 100% 28%;
+    --primary-45: 197 100% 31%;
+    --primary-50: 197 100% 35%;
+    --primary-55: 199 80% 42%;
+    --primary-60: 200 63% 50%;
+    --primary-65: 201 70% 56%;
+    --primary-70: 201 80% 62%;
+    --primary-75: 202 95% 68%;
+    --primary-80: 203 100% 76%;
+    --primary-85: 205 100% 83%;
+    --primary-90: 206 100% 89%;
+    --primary-95: 207 100% 95%;
+    --primary-98: 213 100% 98%;
+    --primary-99: 225 100% 99%;
+    --primary-100: 0 0% 100%;
+    --secondary-0: 0 0% 0%;
+    --secondary-5: 203 94% 6%;
+    --secondary-10: 204 58% 10%;
+    --secondary-15: 203 40% 14%;
+    --secondary-20: 205 31% 19%;
+    --secondary-25: 204 25% 23%;
+    --secondary-30: 204 21% 27%;
+    --secondary-35: 204 18% 32%;
+    --secondary-40: 205 16% 37%;
+    --secondary-45: 205 15% 42%;
+    --secondary-50: 206 13% 47%;
+    --secondary-55: 206 13% 52%;
+    --secondary-60: 206 15% 57%;
+    --secondary-65: 207 17% 62%;
+    --secondary-70: 205 20% 67%;
+    --secondary-75: 207 24% 73%;
+    --secondary-80: 206 30% 78%;
+    --secondary-85: 206 40% 84%;
+    --secondary-90: 207 64% 89%;
+    --secondary-95: 207 100% 95%;
+    --secondary-98: 213 100% 98%;
+    --secondary-99: 225 100% 99%;
+    --secondary-100: 0 0% 100%;
+    --tertiary-0: 0 0% 0%;
+    --tertiary-5: 255 58% 10%;
+    --tertiary-10: 255 41% 15%;
+    --tertiary-15: 255 32% 19%;
+    --tertiary-20: 257 27% 23%;
+    --tertiary-25: 256 23% 28%;
+    --tertiary-30: 255 20% 32%;
+    --tertiary-35: 256 18% 37%;
+    --tertiary-40: 255 16% 42%;
+    --tertiary-45: 257 15% 47%;
+    --tertiary-50: 257 15% 52%;
+    --tertiary-55: 258 17% 57%;
+    --tertiary-60: 257 20% 62%;
+    --tertiary-65: 257 23% 67%;
+    --tertiary-70: 258 28% 72%;
+    --tertiary-75: 257 36% 78%;
+    --tertiary-80: 258 48% 83%;
+    --tertiary-85: 259 72% 89%;
+    --tertiary-90: 259 100% 93%;
+    --tertiary-95: 265 100% 97%;
+    --tertiary-98: 285 100% 98%;
+    --tertiary-99: 300 100% 99%;
+    --tertiary-100: 0 0% 100%;
+    --neutral-0: 0 0% 0%;
+    --neutral-5: 210 12% 7%;
+    --neutral-10: 204 9% 11%;
+    --neutral-15: 210 5% 15%;
+    --neutral-20: 204 5% 19%;
+    --neutral-25: 204 4% 23%;
+    --neutral-30: 210 3% 28%;
+    --neutral-35: 204 3% 32%;
+    --neutral-40: 216 3% 37%;
+    --neutral-45: 210 2% 42%;
+    --neutral-50: 216 2% 47%;
+    --neutral-55: 210 2% 52%;
+    --neutral-60: 210 2% 57%;
+    --neutral-65: 210 2% 62%;
+    --neutral-70: 225 2% 67%;
+    --neutral-75: 210 3% 73%;
+    --neutral-80: 225 4% 78%;
+    --neutral-85: 225 5% 84%;
+    --neutral-90: 240 5% 89%;
+    --neutral-95: 220 11% 95%;
+    --neutral-98: 240 33% 98%;
+    --neutral-99: 240 100% 99%;
+    --neutral-100: 0 0% 100%;
+    --neutral-variant-0: 0 0% 0%;
+    --neutral-variant-5: 202 33% 6%;
+    --neutral-variant-10: 207 20% 11%;
+    --neutral-variant-15: 205 16% 15%;
+    --neutral-variant-20: 207 11% 19%;
+    --neutral-variant-25: 210 10% 24%;
+    --neutral-variant-30: 205 8% 28%;
+    --neutral-variant-35: 210 7% 33%;
+    --neutral-variant-40: 210 6% 37%;
+    --neutral-variant-45: 210 6% 42%;
+    --neutral-variant-50: 208 5% 47%;
+    --neutral-variant-55: 208 5% 52%;
+    --neutral-variant-60: 212 6% 57%;
+    --neutral-variant-65: 208 7% 62%;
+    --neutral-variant-70: 208 8% 67%;
+    --neutral-variant-75: 212 9% 73%;
+    --neutral-variant-80: 212 12% 78%;
+    --neutral-variant-85: 212 16% 84%;
+    --neutral-variant-90: 212 24% 89%;
+    --neutral-variant-95: 212 48% 95%;
+    --neutral-variant-98: 213 100% 98%;
+    --neutral-variant-99: 225 100% 99%;
+    --neutral-variant-100: 0 0% 100%;
+    --error-0: 0 0% 0%;
+    --error-5: 359 100% 9%;
+    --error-10: 358 100% 13%;
+    --error-15: 358 100% 16%;
+    --error-20: 357 100% 21%;
+    --error-25: 357 100% 25%;
+    --error-30: 356 100% 29%;
+    --error-35: 357 92% 34%;
+    --error-40: 0 75% 42%;
+    --error-45: 1 69% 47%;
+    --error-50: 2 73% 53%;
+    --error-55: 3 86% 59%;
+    --error-60: 4 100% 64%;
+    --error-65: 5 100% 70%;
+    --error-70: 6 100% 75%;
+    --error-75: 6 100% 79%;
+    --error-80: 6 100% 84%;
+    --error-85: 7 100% 88%;
+    --error-90: 6 100% 92%;
+    --error-95: 9 100% 96%;
+    --error-98: 7 100% 98%;
+    --error-99: 300 100% 99%;
+    --error-100: 0 0% 100%;
+    --accent-0: 0 0% 0%;
+    --accent-5: 314 100% 8%;
+    --accent-10: 313 100% 12%;
+    --accent-15: 312 100% 15%;
+    --accent-20: 313 84% 20%;
+    --accent-25: 315 65% 25%;
+    --accent-30: 316 54% 31%;
+    --accent-35: 317 47% 36%;
+    --accent-40: 318 42% 41%;
+    --accent-45: 318 38% 46%;
+    --accent-50: 319 38% 52%;
+    --accent-55: 319 44% 57%;
+    --accent-60: 320 52% 63%;
+    --accent-65: 320 62% 68%;
+    --accent-70: 321 77% 74%;
+    --accent-75: 321 100% 79%;
+    --accent-80: 323 100% 84%;
+    --accent-85: 325 100% 88%;
+    --accent-90: 329 100% 92%;
+    --accent-95: 335 100% 96%;
+    --accent-98: 351 100% 99%;
+    --accent-99: 300 100% 99%;
+    --accent-100: 0 0% 100%;
+    --surface-1: 202 15% 14%;
+    --surface-2: 206 17% 16%;
+    --surface-3: 203 20% 18%;
+    --surface-4: 205 20% 19%;
+    --surface-5: 205 22% 20%;
+    --disabled: 216 2% 47%;
+    --primary: var(--primary-80);
+    --on-primary: var(--primary-20);
+    --primary-container: var(--primary-30);
+    --on-primary-container: var(--primary-90);
+    --secondary: var(--secondary-80);
+    --on-secondary: var(--secondary-20);
+    --secondary-container: var(--secondary-30);
+    --on-secondary-container: var(--secondary-90);
+    --tertiary: var(--tertiary-80);
+    --on-tertiary: var(--tertiary-20);
+    --tertiary-container: var(--tertiary-30);
+    --on-tertiary-container: var(--tertiary-90);
+    --error: var(--error-80);
+    --on-error: var(--error-20);
+    --error-container: var(--error-30);
+    --on-error-container: var(--error-80);
+    --accent: var(--accent-80);
+    --on-accent: var(--accent-20);
+    --accent-container: var(--accent-30);
+    --on-accent-container: var(--accent-90);
+    --background: var(--neutral-10);
+    --on-background: var(--neutral-90);
+    --surface: var(--neutral-10);
+    --on-surface: var(--neutral-90);
+    --surface-variant: var(--neutral-variant-30);
+    --on-surface-variant: var(--neutral-variant-80);
+    --outline: var(--neutral-variant-60);
+    --outline-variant: var(--neutral-variant-30);
+    --shadow: var(--neutral-variant-0);
+    --scrim: var(--neutral-variant-0);
+    --inverse-surface: var(--neutral-90);
+    --inverse-on-surface: var(--neutral-20);
+    --inverse-primary: var(--primary-40);
+    --scrollbar-thumb-light: var(--neutral-variant-70);
+    --scrollbar-thumb-hover-light: var(--neutral-variant-60);
+    --scrollbar-thumb: var(--neutral-variant-30);
+    --scrollbar-thumb-hover: var(--neutral-variant-40);
+    --primary-text: var(--on-surface);
+    --secondary-text: var(--on-surface-variant);
+    --disabled-text: var(--disabled);
+    --shadow-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px rgba(0, 0, 0, 0.3);
+    --shadow-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+    --ds-text: hsl(var(--primary-text));
+    --ds-text-brand: hsl(var(--primary));
+    --ds-text-subtlest: hsl(var(--secondary-text));
+    --ds-text-subtle: hsl(var(--secondary-text));
+    --ds-text-disabled: hsl(var(--disabled-text));
+    --ds-text-mediumEmphasis: hsl(var(--secondary-text));
+    --ds-text-highEmphasis: hsl(var(--primary-text));
+    --ds-text-selected: hsl(var(--primary));
+    --ds-text-inverse: hsl(var(--inverse-on-surface));
+    --ds-text-accent-blue: hsl(var(--primary-70));
+    --ds-text-link-resting: hsl(var(--primary));
+    --ds-text-information: hsl(var(--secondary-text));
+    --ds-link: hsl(var(--primary));
+    --ds-link-pressed: hsl(var(--primary));
+    --ds-surface: hsl(var(--surface));
+    --ds-surface-sunken: hsl(var(--neutral-5));
+    --ds-surface-raised: hsl(var(--surface-2));
+    --ds-surface-overlay: hsl(var(--surface-4));
+    --ds-background-default: hsl(var(--background));
+    --ds-background-neutral: hsl(var(--surface-1));
+    --ds-background-neutral-hovered: hsl(var(--surface-2));
+    --ds-background-neutral-pressed: hsl(var(--surface-3));
+    --ds-background-selected: hsl(var(--surface-2));
+    --ds-background-selected-hovered: hsl(var(--surface-3));
+    --ds-background-neutral-subtle: hsl(var(--background));
+    --ds-background-neutral-subtle-hovered: hsl(var(--surface-3));
+    --ds-background-neutral-subtle-pressed: hsl(var(--surface-2));
+    --ds-background-input: hsl(var(--surface-1));
+    --ds-background-input-hovered: hsl(var(--surface-2));
+    --ds-background-input-pressed: hsl(var(--surface-3));
+    --ds-background-disabled: hsl(var(--disabled) / 0.12);
+    --ds-background-brand-bold: hsl(var(--primary));
+    --ds-background-neutral-bold: hsl(var(--inverse-surface));
+    --ds-background-information: hsl(var(--surface-3));
+    --ds-background-inverse-subtle: hsl(var(--surface-1));
+    --ds-background-discovery-hovered: hsl(var(--surface-2));
+    --ds-background-information-bold: hsl(var(--primary));
+    --ds-background-success-bold: #85d993;
+    --ds-background-brand-bold-hovered: hsl(var(--primary) / 0.9);
+    --ds-background-brand-bold-pressed: hsl(var(--primary) / 0.75);
+    --ds-background-neutral-bold-hovered: hsl(var(--primary));
+    --ds-skeleton: hsl(var(--surface-3));
+    --ds-skeleton-subtle: hsl(var(--surface-2));
+    --ds-menu-seperator-color: hsl(var(--outline-variant));
+    --ds-border: hsl(var(--outline-variant)); 
+    --ds-border-selected: hsl(var(--primary));
+    --ds-border-brand: hsl(var(--primary) / 0.8);
+    --ds-border-focused: hsl(var(--primary));
+    --ds-border-accent-purple: hsl(var(--tertiary));
+    --ds-border-input: hsl(var(--surface-5));
+    --ds-border-inverse: hsl(var(--surface-2));
+    --ds-shadow-raised: hsl(var(--shadow-1));
+    --ds-blanket: hsl(var(--scrim) / 0.4);
+    --ds-UNSAFE_util-transparent: hsl(var(--surface-3));
+  }
+
+  ::selection {
+    color: hsl(var(--on-secondary-container));
+    background-color: hsl(var(--secondary-container));
+  }
+
+  ::-webkit-scrollbar {
+    --size: 16px;
+    width: var(--size);
+    height: var(--size);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
+    background-color: hsl(var(--scrollbar-thumb));
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--scrollbar-thumb-hover));
+  }
+
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Header logo path */
+  span.css-12mte9y svg g path {
+    fill: hsl(var(--primary));
+  }
+
+  /* Tab indicator */
+  .css-7ygw74::after {
+    --button-selected-border-color: hsl(var(--primary));
+  }
+
+  /* Tab indicator while loading */
+  .css-17n3b6e:before {
+    --primary-button-before-highlighted-background-color: hsl(var(--primary));
+  }
+
+  /* "You’re in desktop view" banner */
+  .ehAcuj {
+    background-color: hsl(var(--surface-5));
+  }
+
+  /* Card */
+  .dhuviV {
+    background-color: transparent;
+    border-radius: 12px;
+  }
+
+  /* Card background resets */
+  .hMFuoc,
+  .NOLGR, .kHiOgU, .cpZcdZ, .hHbzvV, .dhuviV,
+  .ReactVirtualized__Grid.ReactVirtualized__List,
+  .ReactVirtualized__Grid__innerScrollContainer {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+
+  /* Card button */
+  .hMFuoc .agility-column-menu-meatball > div {
+    background-color: hsl(var(--surface-2));
+  }
+
+  /* Card border */
+  .__board-test-hook__column.sc-1ef3ied-1.cgwwdw.j4whmj-0.kHiOgU {
+    color: hsl(var(--outline-variant));
+    border: 1px solid currentColor;
+    box-shadow: 0 0 1px 0px currentColor inset, 0 0 1px 0px currentColor;
+    border-radius: 12px;
+  }
+
+  /* Columns that appear over cards on small screen size */
+  .kduAQn {
+    /* Hiding because they have large white bars that we can't re-color */
+    display: none;
+  }
+
+  /* Scroll widget container */
+  .dAzBvp {
+    background-color: hsl(var(--surface));
+  }
+
+  /* Scroll widget layers */
+  .fTmZdR {
+    background-color: hsl(var(--surface-5));
+  }
+}
