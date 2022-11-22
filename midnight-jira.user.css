@@ -179,6 +179,7 @@ regexp(".*.atlassian.net/secure.*") {
     --surface-4: 205 20% 19%;
     --surface-5: 205 22% 20%;
     --disabled: 216 2% 47%;
+    --success: 130 52% 69%;
     --primary: var(--primary-80);
     --on-primary: var(--primary-20);
     --primary-container: var(--primary-30);
@@ -237,6 +238,7 @@ regexp(".*.atlassian.net/secure.*") {
     --ds-text-accent-blue: hsl(var(--primary-70));
     --ds-text-link-resting: hsl(var(--primary));
     --ds-text-information: hsl(var(--secondary-text));
+    --ds-icon-success: hsl(var(--success));
     --ds-link: hsl(var(--primary));
     --ds-link-pressed: hsl(var(--primary));
     --ds-surface: hsl(var(--surface));
@@ -262,7 +264,7 @@ regexp(".*.atlassian.net/secure.*") {
     --ds-background-inverse-subtle: hsl(var(--surface-1));
     --ds-background-discovery-hovered: hsl(var(--surface-2));
     --ds-background-information-bold: hsl(var(--primary));
-    --ds-background-success-bold: #85d993;
+    --ds-background-success-bold: hsl(var(--success));
     --ds-background-brand-bold-hovered: hsl(var(--primary) / 0.9);
     --ds-background-brand-bold-pressed: hsl(var(--primary) / 0.75);
     --ds-background-neutral-bold-hovered: hsl(var(--primary));
