@@ -316,6 +316,11 @@ regexp(".*.atlassian.net/secure.*") {
     fill: hsl(var(--primary));
   }
 
+  /* Header search input */
+  .css-1tcl77r {
+    color: hsl(var(--secondary-text))
+  }
+
   /* Tab indicator */
   .css-7ygw74::after {
     --button-selected-border-color: hsl(var(--primary));
