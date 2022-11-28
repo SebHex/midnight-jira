@@ -1,4 +1,4 @@
-# Midnight Jira
+# 🌘 Midnight Jira
 
 A midnight theme for [Jira](https://www.atlassian.com/software/jira).
 
